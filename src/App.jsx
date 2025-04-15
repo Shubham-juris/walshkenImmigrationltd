@@ -1,11 +1,10 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
+import Hero from "./Pages/Home/Hero";
 function App() {
   return (
     <>
-      <h1 class='text-3xl font-bold underline mt-14 py-14 text-center bg-stone-600'>
-        Hello world!
-      </h1>
+      <Hero />
     </>
   );
 }
