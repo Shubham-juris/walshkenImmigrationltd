@@ -1,23 +1,22 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom"; // ✅ use NavLink instead of Link
+import { NavLink, useNavigate } from "react-router-dom";
 import { FaAngleDown, FaAngleRight, FaBars } from "react-icons/fa";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-
+  const navigate = useNavigate();
   const menuItems = [
-    { label: "Home", path: "/", dropdown: true },
+    { label: "Home", path: "/" },
     { label: "About", path: "/about" },
-    { label: "Visa", path: "/visa", dropdown: true },
-    { label: "Pages", path: "/pages", dropdown: true },
-    { label: "Blog", path: "/blog", dropdown: true },
+    { label: "Visa", path: "/visa" },
+    { label: "Pages", path: "/page" },
+    { label: "Blog", path: "/blog" },
     { label: "Contact", path: "/contact" },
   ];
 
   return (
     <header className="bg-white shadow-md py-4">
       <div className="max-w-7xl mx-auto px-4 flex items-center justify-between">
-        {/* Logo */}
         <NavLink to="/" className="flex items-center space-x-2">
           <span className="text-red-600 text-2xl">🌐</span>
           <h1 className="text-xl font-bold">
@@ -25,7 +24,6 @@ const Navbar = () => {
           </h1>
         </NavLink>
 
-        {/* Navigation */}
         <nav className="hidden lg:flex space-x-6 items-center">
           {menuItems.map((item, index) => (
             <div key={index} className="relative">
@@ -38,19 +36,17 @@ const Navbar = () => {
                 }
               >
                 {item.label}
-                {item.dropdown && (
-                  <FaAngleDown className="inline ml-1 text-xs" />
-                )}
               </NavLink>
             </div>
           ))}
         </nav>
 
-        {/* Quote Button & Mobile Toggle */}
         <div className="flex items-center space-x-4">
-          <button className="bg-red-600 hover:bg-red-700 text-white font-semibold text-sm px-5 py-3 rounded-md flex items-center space-x-2">
+          <button
+            onClick={() => navigate("/contact")}
+            className=" bg-red-600 hover:bg-gray-700 text-white font-semibold text-sm px-5 py-3 rounded-md flex items-center space-x-2"
+          >
             <span>Get A Quote</span>
-            <FaAngleRight />
           </button>
           <button
             className="lg:hidden text-xl"
@@ -61,7 +57,6 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Menu */}
       {menuOpen && (
         <div className="lg:hidden bg-white shadow-md mt-2 px-4 pb-4">
           {menuItems.map((item, index) => (

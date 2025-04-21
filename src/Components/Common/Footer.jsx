@@ -4,7 +4,6 @@ const Footer = () => {
   return (
     <footer className="bg-[#15161a] text-white py-16">
       <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
-        {/* Logo & Description */}
         <div>
           <div className="flex items-center mb-4">
             <span className="text-red-600 text-3xl mr-2">🌐</span>
@@ -22,7 +21,6 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Services */}
         <div>
           <h2 className="text-lg font-bold mb-4">Services</h2>
           <ul className="space-y-3 text-gray-400">
@@ -44,19 +42,15 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Instagram */}
         <div>
           <h2 className="text-lg font-bold mb-4">Instagram</h2>
           <div className="grid grid-cols-3 gap-2">
             {[1, 2, 3, 4, 5, 6].map((img) => (
-              <div key={img} className="w-full h-20 bg-gray-700">
-                {/* Replace with actual <img src=... /> */}
-              </div>
+              <div key={img} className="w-full h-20 bg-gray-700"></div>
             ))}
           </div>
         </div>
 
-        {/* Newsletter */}
         <div>
           <h2 className="text-lg font-bold mb-4">Newsletters</h2>
           <p className="text-gray-400 mb-4">
