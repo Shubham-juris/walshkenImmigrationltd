@@ -10,42 +10,46 @@ const visaServices = [
 
 const VisaVisaCategories = () => {
   return (
-    <div className="bg-gray-100 py-12 px-6 md:px-16">
-      <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-12">
-        <div className="mb-6 md:mb-0 md:w-1/2 text-center md:text-left">
-          <p className="text-red-600 uppercase font-semibold tracking-wide">
-            Visa Categories
-          </p>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mt-2">
-            Outstanding Immigration <br /> Visa Services
-          </h2>
-        </div>
-
-        <div className="md:w-1/2 text-gray-600 text-sm sm:text-base lg:text-lg leading-relaxed text-center md:text-left">
-          Transmds is the world’s leading global logistics provider supporting
-          industries and trade for the international exchange of merchandise.
-          Tempor incididunt ut labore et dolore magna aliqua.
-        </div>
-      </div>
-
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 mb-10">
-        {visaServices.map((visa, index) => (
-          <div
-            key={index}
-            className="bg-white shadow-md rounded-md py-8 flex flex-col items-center justify-center hover:shadow-lg transition-shadow duration-300"
-          >
-            <div className="text-4xl mb-4 text-red-600">{visa.icon}</div>
-            <h4 className="font-semibold text-lg">{visa.title}</h4>
+    <div className="bg-gray-100 py-12 px-4 sm:px-6 md:px-10 lg:px-16 flex justify-center">
+      <div className="w-full max-w-7xl">
+        <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-12 text-center md:text-left">
+          <div className="mb-6 md:mb-0 md:w-1/2">
+            <p className="text-red-600 uppercase font-semibold tracking-wide">
+              Visa Categories
+            </p>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mt-2">
+              Outstanding Immigration <br /> Visa Services
+            </h2>
           </div>
-        ))}
-      </div>
 
-      <div className="text-center font-semibold text-sm sm:text-base lg:text-lg">
-        Bring Them Together And You Overcome The Ordinary.
-        <span className="text-black font-normal ml-2">View More Services</span>
-        <button className="ml-2 w-6 h-6 rounded-full bg-red-600 text-white font-bold">
-          +
-        </button>
+          <div className="md:w-1/2 text-gray-600 text-sm sm:text-base lg:text-lg leading-relaxed">
+            Transmds is the world’s leading global logistics provider supporting
+            industries and trade for the international exchange of merchandise.
+            Tempor incididunt ut labore et dolore magna aliqua.
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 mb-10 ">
+          {visaServices.map((visa, index) => (
+            <div
+              key={index}
+              className="bg-white hover:bg-red-600  shadow-md rounded-md py-8 flex flex-col items-center justify-center hover:shadow-lg transition-shadow duration-300 text-center"
+            >
+              <div className="text-4xl mb-4 text-red-600">{visa.icon}</div>
+              <h4 className="font-semibold text-lg ">{visa.title}</h4>
+            </div>
+          ))}
+        </div>
+
+        <div className="text-center font-semibold text-sm sm:text-base lg:text-lg">
+          Bring Them Together And You Overcome The Ordinary.
+          <span className="text-black font-normal ml-2">
+            View More Services
+          </span>
+          <button className="ml-2 w-6 h-6 rounded-full bg-red-600 text-white font-bold">
+            +
+          </button>
+        </div>
       </div>
     </div>
   );

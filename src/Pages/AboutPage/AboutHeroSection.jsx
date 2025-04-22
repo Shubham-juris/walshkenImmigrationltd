@@ -1,5 +1,5 @@
 import React from "react";
-import image from "../../assets/hero/workVisa.jpg";
+import image from "../../assets/hero/WorkVisa.jpg";
 import AboutCompany from "./AboutCompany ";
 import AboutSevices from "./AboutSevices";
 import AboutConsultants from "./AboutConsultants";
@@ -13,7 +13,7 @@ const AboutHeroSection = () => {
         }}
       >
         <div className="relative z-10 flex flex-col justify-center h-full px-8 md:px-16">
-          <h1 className="text-6xl md:text-8xl font-bold text-white text-center">
+          <h1 className="text-6xl md:text-7xl font-bold text-white text-center">
             About
           </h1>
         </div>
