@@ -1,6 +1,6 @@
 import React from "react";
 import Studentvisa from "../../assets/hero/studentVisa.jpg";
-import BusinessVisa from "../../assets/hero/BusinessVisa.jpg";
+import BusinessVisa from "../../assets/hero/studentVisa.jpg";
 import WorkVisa from "../../assets/hero/WorkVisa.jpg";
 import TouristVisa from "../../assets/hero/TouristVisa.jpg";
 const services = [
