@@ -21,9 +21,9 @@ const testimonials = [
   {
     id: 2,
     rating: 3,
-    title: "Quality Services",
+    title: "Client-Focused Support",
     feedback:
-      "creative agency, we believe in the Eid and innovation. We are constantly melt of what is possible, and strive to cat only beautiful and effective, but shark inventore veritatis et quasi architecto beatae vitae dicta sunt atlantic",
+      "Our support team is always ready to help, offering quick responses and effective solutions. Whether you need assistance with documentation or follow-up services, we’re here for you every step of the way.",
   },
 ];
 const consultants = [
@@ -58,7 +58,7 @@ const AboutConsultants = () => {
             Professional People
           </p>
           <h2 className="text-4xl md:text-5xl font-bold mb-2">Consultants</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 py-14">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 py-14 h-70">
             {consultants.map((consultant, index) => (
               <div key={index} className="relative group">
                 <img

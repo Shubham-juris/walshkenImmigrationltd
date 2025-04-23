@@ -15,7 +15,7 @@ const Navbar = () => {
   ];
 
   return (
-    <header className="bg-white shadow-md py-4">
+    <header className="bg-white shadow-md py-4 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 flex items-center justify-between">
         <NavLink to="/" className="flex items-center space-x-2">
           <span className="text-red-600 text-2xl">🌐</span>

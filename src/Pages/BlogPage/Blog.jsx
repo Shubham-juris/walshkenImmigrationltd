@@ -66,7 +66,7 @@ const Blog = () => {
     {
       id: 6,
       date: "15 Sep",
-      author: "salman",
+      author: "salman", 
       comments: 2,
       category: "Business",
       title: "The Road To Adventure Embarking On New Horizons",

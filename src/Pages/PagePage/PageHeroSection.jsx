@@ -1,35 +1,35 @@
 import React from "react";
 import PageCourseCards from "./PageCourseCards";
+import PageImage1 from "../../assets/hero/pexels-cottonbro-5137969.jpg";
+import PageImage2 from "../../assets/hero/pexels-ekrulila-2305114.jpg";
+import PageImage3 from "../../assets/hero/pexels-freestockpro-1008155.jpg";
+import PageImage4 from "../../assets/hero/pexels-joshsorenson-1716826.jpg";
 
 const PageHeroSection = () => {
   const coachingData = [
     {
       title: "IELTS Courses",
-      description: "Sit amet conse bestibulume ullamcorper nulla amet",
-      image: "/images/ielts.jpg",
-      icon: "/icons/cap.svg",
-      isActive: false,
+      description:
+        "Our IELTS coaching is designed to help students achieve their desired band scores through expert-led training, flexible schedules, and a focus on all four modules—listening, reading, writing, and speaking. We provide updated study materials, mock tests, and personalized feedback to boost your confidence and performance.",
+      image: PageImage1,
     },
     {
       title: "Citizenship Test",
-      description: "Sit amet conse bestibulume ullamcorper nulla amet",
-      image: "/images/citizenship.jpg",
-      icon: "/icons/citizenship.svg",
-      isActive: true,
+      description:
+        "Prepare for your Citizenship Test with our structured coaching that covers essential topics like government systems, civic responsibilities, and national history. Our experienced instructors guide you through practice tests and key concepts to ensure you're ready with knowledge and confidence on exam day.",
+      image: PageImage2,
     },
     {
       title: "TOFEL Coaching",
-      description: "Sit amet conse bestibulume ullamcorper nulla amet",
-      image: "/images/tofel.jpg",
-      icon: "/icons/tofel.svg",
-      isActive: false,
+      description:
+        "Our TOEFL coaching program is designed to strengthen your skills in reading, listening, speaking, and writing. With focused practice tests, expert strategies, and individual guidance, we help you meet your academic or immigration goals with a higher score and improved confidence.",
+      image: PageImage3,
     },
     {
       title: "OET Coaching",
-      description: "Sit amet conse bestibulume ullamcorper nulla amet",
-      image: "/images/oet.jpg",
-      icon: "/icons/oet.svg",
-      isActive: false,
+      description:
+        "Different types of programs, such as group classes, one-on-one sessions, or online courses. You can have each program displayed as a card or grid, each with a short description, pricing, and a CTA (call to action) button like Outline of the course structure, such as lessons on speaking, listening, reading.",
+      image: PageImage4,
     },
   ];
 
@@ -37,28 +37,21 @@ const PageHeroSection = () => {
     <>
       <div
         className="relative w-full h-[400px] bg-cover bg-center flex items-center justify-center"
-        style={{ backgroundImage: "url(/path-to-your-image.jpg)" }}
+        style={{ backgroundImage: `url(${PageImage1})` }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-transparent"></div>
-
         <div className="relative z-10 w-full max-w-7xl flex justify-between items-center px-4 sm:px-8 md:px-20 text-white">
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold">
             Coaching
           </h1>
-          <p className="text-sm sm:text-base text-right">
-            <span className="font-semibold">Home</span> &nbsp;—&nbsp; Coaching
-          </p>
         </div>
       </div>
-
       <div className="bg-gray-100 py-16 px-4 md:px-12">
         <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {coachingData.map((item, index) => (
             <div
               key={index}
-              className={`rounded-2xl p-6 text-center shadow-md transition-all duration-300 ${
-                item.isActive ? "bg-red-600 text-white" : "bg-white text-black"
-              }`}
+              className="group rounded-2xl p-6 text-center shadow-md transform transition-all duration-300 hover:scale-105 bg-white text-black hover:bg-red-600 hover:text-white"
             >
               <div className="relative w-28 h-28 mx-auto mb-4">
                 <img
@@ -66,13 +59,6 @@ const PageHeroSection = () => {
                   alt={item.title}
                   className="w-full h-full object-cover rounded-full"
                 />
-                <div
-                  className={`absolute -bottom-3 left-1/2 transform -translate-x-1/2 w-10 h-10 rounded-full flex items-center justify-center ${
-                    item.isActive ? "bg-white" : "bg-red-600"
-                  }`}
-                >
-                  <img src={item.icon} alt="icon" className="w-5 h-5" />
-                </div>
               </div>
 
               <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
@@ -81,7 +67,6 @@ const PageHeroSection = () => {
           ))}
         </div>
       </div>
-
       <PageCourseCards />
     </>
   );

@@ -7,7 +7,7 @@ const AboutHeroSection = () => {
   return (
     <>
       <div
-        className="relative w-full h-94 bg-cover bg-center bg-no-repeat"
+        className="relative w-full h-[400px] bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), url(${image})`,
         }}
@@ -18,7 +18,6 @@ const AboutHeroSection = () => {
           </h1>
         </div>
       </div>
-
       <AboutCompany />
       <AboutSevices />
       <AboutConsultants />
