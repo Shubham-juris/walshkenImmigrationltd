@@ -10,7 +10,7 @@ import PageImage1 from "../../assets/hero/pexels-cottonbro-5137969.jpg";
 import PageImage2 from "../../assets/hero/pexels-ekrulila-2305114.jpg";
 import PageImage3 from "../../assets/hero/pexels-freestockpro-1008155.jpg";
 import PageImage4 from "../../assets/hero/pexels-joshsorenson-1716826.jpg";
-  
+
 const courses = [
   {
     title: "IELTS Courses",
