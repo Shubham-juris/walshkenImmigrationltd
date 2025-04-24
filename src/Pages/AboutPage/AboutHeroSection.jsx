@@ -9,7 +9,7 @@ const AboutHeroSection = () => {
       <div
         className="relative w-full h-[400px] bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), url(${image})`,
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1.87)), url(${image})`,
         }}
       >
         <div className="relative z-10 flex flex-col justify-center h-full px-8 md:px-16">

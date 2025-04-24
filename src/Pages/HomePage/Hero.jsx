@@ -1,5 +1,5 @@
 import React from "react";
-import heroBgImage from "../../assets/hero/HeroBGImage.jpg";
+import heroBgImage from "../../assets/hero/e813e040-6fa5-42ea-8b94-d4adb0288c35.jpg";
 import HomeCoursesSection from "./HomeCoursesSection ";
 
 const Hero = () => {
@@ -7,7 +7,9 @@ const Hero = () => {
     <>
       <div
         className="relative w-full h-[400px] bg-cover bg-center bg-no-repeat flex items-center justify-center text-white"
-        style={{ backgroundImage: `url(${heroBgImage})` }}
+        style={{
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url(${heroBgImage})`,
+        }}
       >
         <div className="absolute inset-0 bg-black/60"></div>
         <div className="relative z-10 text-center px-4 sm:px-8 max-w-2xl">

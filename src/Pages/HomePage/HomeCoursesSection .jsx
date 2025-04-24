@@ -5,7 +5,12 @@ import heroBgImage2 from "../../assets/hero/AboutImage2.jpg";
 import heroBgImage3 from "../../assets/hero/AboutImage3.jpg";
 import { FaCheckCircle } from "react-icons/fa";
 import mainImage from "../../assets/hero/TouristVisa.jpg";
-import smallImage from "../../assets/hero/home3.jpg";
+import smallImage from "../../assets/hero/visaImg.jpg";
+import PageImage1 from "../../assets/hero/pexels-cottonbro-5137969.jpg";
+import PageImage2 from "../../assets/hero/pexels-ekrulila-2305114.jpg";
+import PageImage3 from "../../assets/hero/pexels-freestockpro-1008155.jpg";
+import PageImage4 from "../../assets/hero/pexels-joshsorenson-1716826.jpg";
+
 const courses = [
   {
     title: "IELTS Courses",
@@ -32,6 +37,32 @@ const courses = [
     image: heroBgImage3,
   },
 ];
+const coachingData = [
+  {
+    title: "IELTS Courses",
+    description:
+      "Our IELTS coaching is designed to help students achieve their desired band scores through expert-led training, flexible schedules, and a focus on all four modules—listening, reading, writing, and speaking. We provide updated study materials, mock tests, and personalized feedback to boost your confidence and performance.",
+    image: PageImage1,
+  },
+  {
+    title: "Citizenship Test",
+    description:
+      "Prepare for your Citizenship Test with our structured coaching that covers essential topics like government systems, civic responsibilities, and national history. Our experienced instructors guide you through practice tests and key concepts to ensure you're ready with knowledge and confidence on exam day.",
+    image: PageImage2,
+  },
+  {
+    title: "TOFEL Coaching",
+    description:
+      "Our TOEFL coaching program is designed to strengthen your skills in reading, listening, speaking, and writing. With focused practice tests, expert strategies, and individual guidance, we help you meet your academic or immigration goals with a higher score and improved confidence.",
+    image: PageImage3,
+  },
+  {
+    title: "OET Coaching",
+    description:
+      "Different types of programs, such as group classes, one-on-one sessions, or online courses. You can have each program displayed as a card or grid, each with a short description, pricing, and a CTA (call to action) button like Outline of the course structure, such as lessons on speaking, listening, reading.",
+    image: PageImage4,
+  },
+];
 const HomeCoursesSection = () => {
   return (
     <>
@@ -40,14 +71,17 @@ const HomeCoursesSection = () => {
           {courses.map((course, index) => (
             <div
               key={index}
-              className=" h-73 flex items-center bg-white p-6 rounded-xl shadow-md hover:bg-red-600 transition-colors duration-300 group"
+              className="flex items-start bg-white p-6 rounded-xl shadow-md hover:bg-red-600 transition-colors duration-300 group"
             >
-              <img
-                src={course.image}
-                alt={course.title}
-                className="w-24 h-24 sm:w-28 sm:h-28 rounded-full object-cover mr-6 border-2 border-gray-200"
-              />
-              <div>
+              <div className="min-w-[96px] min-h-[96px] w-24 h-24 sm:w-28 sm:h-28 mr-6">
+                <img
+                  src={course.image}
+                  alt={course.title}
+                  className="w-32 h-32 rounded-full object-cover"
+                />
+              </div>
+
+              <div className="flex-1">
                 <h2 className="text-lg sm:text-xl font-bold mb-1 group-hover:text-white">
                   {course.title}
                 </h2>
@@ -96,13 +130,13 @@ const HomeCoursesSection = () => {
             <div className="flex gap-10 mb-6">
               <div className="text-center">
                 <div className="w-20 h-20 rounded-full border-4 border-red-500 flex items-center justify-center text-2xl font-bold text-black">
-                  100%
+                  76%
                 </div>
                 <p className="mt-2 font-semibold">Business Strategy</p>
               </div>
               <div className="text-center">
                 <div className="w-20 h-20 rounded-full border-4 border-red-500 flex items-center justify-center text-2xl font-bold text-black">
-                  99%
+                  69%
                 </div>
                 <p className="mt-2 font-semibold">Real Technology Solutions</p>
               </div>
@@ -129,6 +163,27 @@ const HomeCoursesSection = () => {
           </div>
         </div>
       </section>
+      <div className="bg-gray-100 py-16 px-4 md:px-12">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          {coachingData.map((item, index) => (
+            <div
+              key={index}
+              className="group rounded-2xl p-6 text-center shadow-md transform transition-all duration-300 hover:scale-105 bg-white text-black hover:bg-red-600 hover:text-white"
+            >
+              <div className="relative w-28 h-28 mx-auto mb-4">
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  className="w-full h-full object-cover rounded-full"
+                />
+              </div>
+
+              <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
+              <p className="text-sm leading-relaxed">{item.description}</p>
+            </div>
+          ))}
+        </div>
+      </div>
     </>
   );
 };

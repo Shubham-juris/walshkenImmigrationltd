@@ -5,40 +5,40 @@ import BlogImage2 from "../../assets/hero/BlogImage2.jpg";
 import BlogImage3 from "../../assets/hero/BlogImage3.jpg";
 import BlogImage4 from "../../assets/hero/BlogImage4.jpg";
 import BlogImage5 from "../../assets/hero/BlogImage5.jpg";
-
+import ImageVisa from "../../assets/hero/VisaImg.jpg";
 const Blog = () => {
   const blogPosts = [
     {
       id: 1,
-      date: "07 jul",
+      date: "07 Jul",
       author: "salman",
       comments: 0,
       category: "Consulting",
       title: "Journeys Of Discovery Uncovering Hidden Treasures",
       excerpt:
-        "With worldwide annual spend on digital advertising surpassing $325 billion, it’s no...",
+        "With global digital ad spending exceeding $325 billion annually, the quest for visibility has never been more intense. Discover how strategic consulting uncovers hidden opportunities...",
       image: BlogImage,
     },
     {
       id: 2,
-      date: "17 jun",
+      date: "17 Jun",
       author: "salman",
       comments: 0,
       category: "Immigration",
       title: "Unlocking Opportunities The Visa Journey Unveiled",
       excerpt:
-        "With worldwide annual spend on digital advertising surpassing $325 billion, it’s no...",
+        "Navigating the visa process can be complex, but it opens doors to life-changing opportunities. Explore key insights that make immigration a journey worth taking...",
       image: BlogImage1,
     },
     {
       id: 3,
-      date: "12 may",
+      date: "12 May",
       author: "salman",
       comments: 0,
       category: "Business",
       title: "Navigating Borders Ultimate Guide To Visa Success",
       excerpt:
-        "With worldwide annual spend on digital advertising surpassing $325 billion, it’s no...",
+        "In a globalized world, borders are more than just lines on a map—they’re opportunities. This ultimate guide walks you through the essential steps for visa approval, offering expert tips and common pitfalls to avoid in your business travel journey...",
       image: BlogImage2,
     },
     {
@@ -49,7 +49,7 @@ const Blog = () => {
       category: "Green Card",
       title: "Citizenship Concept On How To Become A UK Resident",
       excerpt:
-        "With worldwide annual spend on digital advertising surpassing $325 billion, it’s no...",
+        "Dreaming of settling in the UK? From eligibility to application, this comprehensive overview breaks down the UK residency and citizenship process, providing insights into key legal requirements and strategic steps to make your transition smoother...",
       image: BlogImage3,
     },
     {
@@ -60,18 +60,18 @@ const Blog = () => {
       category: "Green Card",
       title: "Wonders Of Ancient Civilizations Through Egypt",
       excerpt:
-        "With worldwide annual spend on digital advertising surpassing $325 billion, it’s no...",
+        "Travel back in time and explore the architectural wonders and timeless wisdom of ancient Egypt. This piece isn’t just a history lesson—it highlights how cultural immersion can enhance your global mobility journey, especially for heritage-based visa paths...",
       image: BlogImage4,
     },
     {
       id: 6,
       date: "15 Sep",
-      author: "salman", 
+      author: "salman",
       comments: 2,
       category: "Business",
       title: "The Road To Adventure Embarking On New Horizons",
       excerpt:
-        "With worldwide annual spend on digital advertising surpassing $325 billion, it’s no...",
+        "Setting out into the unknown can be daunting, but it's also where growth begins. Discover how business visas and global mobility open doors to new markets, fresh perspectives, and life-changing opportunities around the world...",
       image: BlogImage5,
     },
   ];
@@ -80,7 +80,7 @@ const Blog = () => {
     <>
       <div
         className="relative w-full h-[400px] bg-cover bg-center flex items-center justify-center"
-        style={{ backgroundImage: "url(/path-to-your-image.jpg)" }}
+        style={{ backgroundImage: `url(${ImageVisa})` }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-transparent"></div>
         <div className="relative z-10 text-center text-white px-4">

@@ -40,7 +40,7 @@ const PageHeroSection = () => {
         style={{ backgroundImage: `url(${PageImage1})` }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-transparent"></div>
-        <div className="relative z-10 w-full max-w-7xl flex justify-between items-center px-4 sm:px-8 md:px-20 text-white">
+        <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4 sm:px-8">
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold">
             Coaching
           </h1>
