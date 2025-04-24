@@ -5,7 +5,7 @@ import heroBgImage2 from "../../assets/hero/AboutImage2.jpg";
 import heroBgImage3 from "../../assets/hero/AboutImage3.jpg";
 import { FaCheckCircle } from "react-icons/fa";
 import mainImage from "../../assets/hero/TouristVisa.jpg";
-import smallImage from "../../assets/hero/visaimg.jpg";
+import smallImage from "../../assets/hero/VisaImg.jpg";
 import PageImage1 from "../../assets/hero/pexels-cottonbro-5137969.jpg";
 import PageImage2 from "../../assets/hero/pexels-ekrulila-2305114.jpg";
 import PageImage3 from "../../assets/hero/pexels-freestockpro-1008155.jpg";
