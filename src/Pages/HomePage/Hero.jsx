@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <>
       <div
-        className="relative w-full h-[400px] bg-cover bg-center bg-no-repeat flex items-center justify-center text-white"
+        className="relative w-full h-screen bg-cover bg-center bg-no-repeat flex items-center justify-center text-white"
         style={{
           backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url(${heroBgImage})`,
         }}
