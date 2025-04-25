@@ -97,7 +97,7 @@ const HomeCoursesSection = () => {
               </div>
             </div>
           ))}
-        </div>
+        </div>  
       </section>
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center gap-10">

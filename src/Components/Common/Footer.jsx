@@ -1,4 +1,5 @@
 import { FaFacebookF, FaTwitter, FaVimeoV, FaLinkedinIn } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -6,8 +7,12 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 items-center text-center">
         <div>
           <div className="flex justify-center items-center mb-4">
-            <span className="text-red-600 text-3xl mr-2">🌐</span>
-            <h1 className="text-2xl font-bold">VISALAND</h1>
+            <NavLink to="/" className="flex items-center space-x-2">
+              <span className="text-red-600 text-2xl">🌐</span>
+              <h1 className="text-xl font-bold">
+                Walshken<span className="text-red-600">Immigration</span>
+              </h1>
+            </NavLink>
           </div>
           <p className="text-gray-400 mb-6">
             Your trusted partner for IELTS, TOEFL, OET coaching & Citizenship
@@ -45,7 +50,7 @@ const Footer = () => {
         <div>
           <h2 className="text-lg font-bold mb-4">Contact</h2>
           <p className="text-gray-400 mb-2">
-            Phone: <br /> +1 234 567 890
+            Phone: <br /> +1 718-904-4450
           </p>
           <p className="text-gray-400 mb-2">
             Email: <br /> info@visaland.com
