@@ -20,10 +20,34 @@ const Footer = () => {
             success.
           </p>
           <div className="flex justify-center space-x-4">
-            <FaFacebookF className="text-lg bg-gray-800 hover:bg-red-600 p-2 rounded-full w-10 h-10 cursor-pointer" />
-            <FaTwitter className="text-lg bg-gray-800 hover:bg-red-600 p-2 rounded-full w-10 h-10 cursor-pointer" />
-            <FaVimeoV className="text-lg bg-gray-800 hover:bg-red-600 p-2 rounded-full w-10 h-10 cursor-pointer" />
-            <FaLinkedinIn className="text-lg bg-gray-800 hover:bg-red-600 p-2 rounded-full w-10 h-10 cursor-pointer" />
+            <a
+              href="https://www.facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaFacebookF className="text-lg bg-gray-800 hover:bg-blue-600 p-2 rounded-full w-10 h-10 cursor-pointer transform hover:scale-110 transition-transform duration-200 ease-in-out" />
+            </a>
+            <a
+              href="https://www.twitter.com "
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaTwitter className="text-lg bg-gray-800 hover:bg-blue-500 p-2 rounded-full w-10 h-10 cursor-pointer transform hover:scale-110 transition-transform duration-200 ease-in-out" />
+            </a>
+            <a
+              href="https://www.vimeo.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaVimeoV className="text-lg bg-gray-800 hover:bg-blue-700 p-2 rounded-full w-10 h-10 cursor-pointer transform hover:scale-110 transition-transform duration-200 ease-in-out" />
+            </a>
+            <a
+              href="https://www.linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedinIn className="text-lg bg-gray-800 hover:bg-blue-700 p-2 rounded-full w-10 h-10 cursor-pointer transform hover:scale-110 transition-transform duration-200 ease-in-out" />
+            </a>
           </div>
         </div>
 
