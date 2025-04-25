@@ -11,59 +11,59 @@ import PageImage2 from "../../assets/hero/pexels-ekrulila-2305114.jpg";
 import PageImage3 from "../../assets/hero/pexels-freestockpro-1008155.jpg";
 import PageImage4 from "../../assets/hero/pexels-joshsorenson-1716826.jpg";
 
-const courses = [
-  {
-    title: "IELTS Courses",
-    description:
-      -"Our IELTS coaching is designed to help students achieve their desired band scores through expert-led training, flexible schedules, and a focus on all four modules—listening, reading, writing, and speaking. We provide updated study materials, mock tests, and personalized feedback to boost your confidence and performance., with flexible schedules, expert instructors, and personalized practice materials to ensure high band scores.",
-    image: heroBgImage,
-  },
-  {
-    title: "Citizenship Test",
-    description:
-      "Prepare for your Citizenship Test with our structured coaching that covers essential topics like government systems, civic responsibilities, and national history. Our experienced instructors guide you through practice tests and key concepts to ensure you're ready with knowledge and confidence on exam day.",
-    image: heroBgImage1,
-  },
-  {
-    title: "TOFEL Coaching",
-    description:
-      "Our TOEFL coaching program is designed to strengthen your skills in reading, listening, speaking, and writing. With focused practice tests, expert strategies, and individual guidance, we help you meet your academic or immigration goals with a higher score and improved confidence",
-    image: heroBgImage2,
-  },
-  {
-    title: "OET Coaching",
-    description:
-      "Our OET coaching is tailored for healthcare professionals, focusing on the language skills needed for success in real workplace scenarios, with expert trainers, role-play practice, and test-specific strategies for all four sub-tests.",
-    image: heroBgImage3,
-  },
-];
-const coachingData = [
-  {
-    title: "IELTS Courses",
-    description:
-      "Our IELTS coaching is designed to help students achieve their desired band scores through expert-led training, flexible schedules, and a focus on all four modules—listening, reading, writing, and speaking. We provide updated study materials, mock tests, and personalized feedback to boost your confidence and performance.",
-    image: PageImage1,
-  },
-  {
-    title: "Citizenship Test",
-    description:
-      "Prepare for your Citizenship Test with our structured coaching that covers essential topics like government systems, civic responsibilities, and national history. Our experienced instructors guide you through practice tests and key concepts to ensure you're ready with knowledge and confidence on exam day.",
-    image: PageImage2,
-  },
-  {
-    title: "TOFEL Coaching",
-    description:
-      "Our TOEFL coaching program is designed to strengthen your skills in reading, listening, speaking, and writing. With focused practice tests, expert strategies, and individual guidance, we help you meet your academic or immigration goals with a higher score and improved confidence.",
-    image: PageImage3,
-  },
-  {
-    title: "OET Coaching",
-    description:
-      "Different types of programs, such as group classes, one-on-one sessions, or online courses. You can have each program displayed as a card or grid, each with a short description, pricing, and a CTA (call to action) button like Outline of the course structure, such as lessons on speaking, listening, reading.",
-    image: PageImage4,
-  },
-];
 const HomeCoursesSection = () => {
+  const coachingData = [
+    {
+      title: "IELTS Courses",
+      description:
+        "Our IELTS coaching is designed to help students achieve their desired band scores through expert-led training, flexible schedules, and a focus on all four modules—listening, reading, writing, and speaking. We provide updated study materials, mock tests, and personalized feedback to boost your confidence and performance.",
+      image: PageImage1,
+    },
+    {
+      title: "Citizenship Test",
+      description:
+        "Prepare for your Citizenship Test with our structured coaching that covers essential topics like government systems, civic responsibilities, and national history. Our experienced instructors guide you through practice tests and key concepts to ensure you're ready with knowledge and confidence on exam day.",
+      image: PageImage2,
+    },
+    {
+      title: "TOFEL Coaching",
+      description:
+        "Our TOEFL coaching program is designed to strengthen your skills in reading, listening, speaking, and writing. With focused practice tests, expert strategies, and individual guidance, we help you meet your academic or immigration goals with a higher score and improved confidence.",
+      image: PageImage3,
+    },
+    {
+      title: "OET Coaching",
+      description:
+        "Different types of programs, such as group classes, one-on-one sessions, or online courses. You can have each program displayed as a card or grid, each with a short description, pricing, and a CTA (call to action) button like Outline of the course structure, such as lessons on speaking, listening, reading.",
+      image: PageImage4,
+    },
+  ];
+  const courses = [
+    {
+      title: "IELTS Courses",
+      description:
+        -"Our IELTS coaching is designed to help students achieve their desired band scores through expert-led training, flexible schedules, and a focus on all four modules—listening, reading, writing, and speaking. We provide updated study materials, mock tests, and personalized feedback to boost your confidence and performance., with flexible schedules, expert instructors, and personalized practice materials to ensure high band scores.",
+      image: heroBgImage,
+    },
+    {
+      title: "Citizenship Test",
+      description:
+        "Prepare for your Citizenship Test with our structured coaching that covers essential topics like government systems, civic responsibilities, and national history. Our experienced instructors guide you through practice tests and key concepts to ensure you're ready with knowledge and confidence on exam day.",
+      image: heroBgImage1,
+    },
+    {
+      title: "TOFEL Coaching",
+      description:
+        "Our TOEFL coaching program is designed to strengthen your skills in reading, listening, speaking, and writing. With focused practice tests, expert strategies, and individual guidance, we help you meet your academic or immigration goals with a higher score and improved confidence",
+      image: heroBgImage2,
+    },
+    {
+      title: "OET Coaching",
+      description:
+        "Our OET coaching is tailored for healthcare professionals, focusing on the language skills needed for success in real workplace scenarios, with expert trainers, role-play practice, and test-specific strategies for all four sub-tests.",
+      image: heroBgImage3,
+    },
+  ];
   return (
     <>
       <section className="bg-gray-100 py-16 px-4 sm:px-6 lg:px-20">
