@@ -12,11 +12,15 @@ const Contact = () => {
     <>
       <div
         className="relative w-full h-[400px] bg-cover bg-center flex items-center justify-center"
-        style={{ backgroundImage: `url(${contactImage})` }}
+        style={{
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1.2)),url(${contactImage})`,
+        }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-transparent"></div>
-        <div className="relative z-10 text-center text-white px-4">
-          <h1 className="text-4xl md:text-6xl font-bold">Contact</h1>
+        <div className="container mx-auto relative z-10 flex flex-col justify-center h-full px-6 md:px-16">
+          <h1 className="text-4xl md:text-7xl font-bold text-white text-center md:text-left lg:px-20">
+            Contact
+          </h1>
         </div>
       </div>
 
