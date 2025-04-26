@@ -4,9 +4,11 @@ import { NavLink } from "react-router-dom";
 const Footer = () => {
   return (
     <footer className="bg-[#15161a] text-white py-16">
-      <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 items-center text-center">
+      <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 text-center md:text-left">
+        
+        {/* Logo and Description */}
         <div>
-          <div className="flex justify-center items-center mb-4">
+          <div className="flex justify-center md:justify-start items-center mb-4">
             <NavLink to="/" className="flex items-center space-x-2">
               <span className="text-red-600 text-2xl">🌐</span>
               <h1 className="text-xl font-bold">
@@ -19,58 +21,43 @@ const Footer = () => {
             Test preparation, guiding you every step of the way to global
             success.
           </p>
-          <div className="flex justify-center space-x-4">
-            <a
-              href="https://www.facebook.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaFacebookF className="text-lg bg-gray-800 hover:bg-blue-600 p-2 rounded-full w-10 h-10 cursor-pointer transform hover:scale-110 transition-transform duration-200 ease-in-out" />
-            </a>
-            <a
-              href="https://www.twitter.com "
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaTwitter className="text-lg bg-gray-800 hover:bg-blue-500 p-2 rounded-full w-10 h-10 cursor-pointer transform hover:scale-110 transition-transform duration-200 ease-in-out" />
-            </a>
-            <a
-              href="https://www.vimeo.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaVimeoV className="text-lg bg-gray-800 hover:bg-blue-700 p-2 rounded-full w-10 h-10 cursor-pointer transform hover:scale-110 transition-transform duration-200 ease-in-out" />
-            </a>
-            <a
-              href="https://www.linkedin.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaLinkedinIn className="text-lg bg-gray-800 hover:bg-blue-700 p-2 rounded-full w-10 h-10 cursor-pointer transform hover:scale-110 transition-transform duration-200 ease-in-out" />
-            </a>
+
+          {/* Social Icons */}
+          <div className="flex justify-center md:justify-start space-x-4">
+            {[
+              { href: "https://www.facebook.com", icon: <FaFacebookF /> },
+              { href: "https://www.twitter.com", icon: <FaTwitter /> },
+              { href: "https://www.vimeo.com", icon: <FaVimeoV /> },
+              { href: "https://www.linkedin.com", icon: <FaLinkedinIn /> }
+            ].map((social, index) => (
+              <a
+                key={index}
+                href={social.href}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div className="text-lg bg-gray-800 hover:bg-blue-600 p-2 rounded-full w-10 h-10 flex items-center justify-center cursor-pointer transform hover:scale-110 transition-transform duration-200 ease-in-out">
+                  {social.icon}
+                </div>
+              </a>
+            ))}
           </div>
         </div>
 
+        {/* Services */}
         <div>
           <h2 className="text-lg font-bold mb-4">Services</h2>
           <ul className="space-y-3 text-gray-400">
-            {[
-              "Canada Visa",
-              "Japan Visa",
-              "Spain Visa",
-              "Germany Visa",
-              "Italy Visa",
-            ].map((item, index) => (
-              <li
-                key={index}
-                className="flex justify-center items-center space-x-2 hover:text-red-600 cursor-pointer"
-              >
+            {["Canada Visa", "Japan Visa", "Spain Visa", "Germany Visa", "Italy Visa"].map((service, index) => (
+              <li key={index} className="flex justify-center md:justify-start items-center space-x-2 hover:text-red-600 cursor-pointer">
                 <span>»</span>
-                <span>{item}</span>
+                <span>{service}</span>
               </li>
             ))}
           </ul>
         </div>
+
+        {/* Contact Info */}
         <div>
           <h2 className="text-lg font-bold mb-4">Contact</h2>
           <p className="text-gray-400 mb-2">
@@ -84,6 +71,8 @@ const Footer = () => {
             123 Main St, City, Country
           </p>
         </div>
+
+        {/* Newsletter */}
         <div>
           <h2 className="text-lg font-bold mb-4">Newsletters</h2>
           <p className="text-gray-400 mb-4">
@@ -98,6 +87,7 @@ const Footer = () => {
             Subscribe Now
           </button>
         </div>
+
       </div>
     </footer>
   );
