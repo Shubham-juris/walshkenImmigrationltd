@@ -15,7 +15,7 @@ const Footer = () => {
             </NavLink>
           </div>
           <p className="text-gray-400 mb-6">
-            Your trusted partner for IELTS, TOEFL, OET coaching & Citizenship
+            Your trusted partner for IELTS, TOEFL, PTE coaching & Citizenship
             Test preparation, guiding you every step of the way to global
             success.
           </p>

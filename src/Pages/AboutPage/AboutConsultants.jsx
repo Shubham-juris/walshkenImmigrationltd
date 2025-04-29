@@ -169,7 +169,7 @@ const AboutConsultants = () => {
               <div>
                 <p className="text-gray-300 text-sm">Make a Quote</p>
                 <p className="font-bold text-lg text-white">
-                info@visaland.com
+                  info@visaland.com
                 </p>
               </div>
             </div>
@@ -181,7 +181,7 @@ const AboutConsultants = () => {
               <div>
                 <p className="text-gray-300 text-sm">Location</p>
                 <p className="font-bold text-lg text-white">
-                123 Main St, City, Country
+                  123 Main St, City, Country
                 </p>
               </div>
             </div>
