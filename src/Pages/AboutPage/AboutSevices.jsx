@@ -1,31 +1,33 @@
 import React from "react";
+
 import Studentvisa from "../../assets/hero/studentVisa.webp";
 import BusinessVisa from "../../assets/hero/studentVisa.webp";
 import WorkVisa from "../../assets/hero/WorkVisa.webp";
 import TouristVisa from "../../assets/hero/TouristVisa.webp";
+
 const services = [
   {
     title: "Business Visa",
     description:
-      "Sit amet consectetur bestibulu ullamcorer arcustulla amet dolor tortor elementum",
+      "Our Business Visa program provides tailored guidance for professionals and entrepreneurs planning to expand their ventures globally. With expert consultation on documentation.",
     image: BusinessVisa,
   },
   {
     title: "Student Visa",
     description:
-      "Sit amet consectetur bestibulu ullamcorer arcustulla amet dolor tortor elementum",
+      "Our Student Visa guidance program is designed to help students successfully apply for study abroad opportunities.    for a smooth transition to your dream education destination.",
     image: Studentvisa,
   },
   {
     title: "Work Visa",
     description:
-      "Sit amet consectetur bestibulu ullamcorer arcustulla amet dolor tortor elementum",
+      "Our Work Visa support program helps professionals navigate the application process with ease. We provide personalized assistance for job , documentation, interview preparation.",
     image: WorkVisa,
   },
   {
     title: "Tourist Visa",
     description:
-      "Sit amet consectetur bestibulu ullamcorer arcustulla amet dolor tortor elementum",
+      "Planning a vacation abroad? Our Tourist Visa service ensures  documentation to travel tips nsures you have everything in place—from documentation to travel tips",
     image: TouristVisa,
   },
 ];

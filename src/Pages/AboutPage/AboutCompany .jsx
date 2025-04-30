@@ -18,7 +18,6 @@ const AboutCompany = () => {
             className="absolute -bottom-10 left-10 w-2/3 rounded-md shadow-xl border-4 border-white"
           />
         </div>
-
         <div className="w-full md:w-1/2">
           <p className="text-LG text-red-600 font-semibold uppercase mb-2">
             About Company
