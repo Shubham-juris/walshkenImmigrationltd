@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import { FaAngleDown, FaAngleRight, FaBars } from "react-icons/fa";
+import logo from '../../assets/hero/logo.webp'
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -18,7 +19,7 @@ const Navbar = () => {
     <header className="bg-white shadow-md py-4">
       <div className="max-w-7xl mx-auto px-4 flex items-center justify-between">
         <NavLink to="/" className="flex items-center space-x-2">
-          <span className="text-red-600 text-2xl">🌐</span>
+          <img src={logo} className='w-16 h-16 object-contain' alt="" />
           <h1 className="text-xl font-bold">
             Walshken<span className="text-red-600">Immigration</span>
           </h1>

@@ -6,28 +6,28 @@ const PageHeroSection = () => {
     {
       title: "IELTS Courses",
       description: "Sit amet conse bestibulume ullamcorper nulla amet",
-      image: "/images/ielts.jpg",
+      image: "/images/ielts.webp",
       icon: "/icons/cap.svg",
       isActive: false,
     },
     {
       title: "Citizenship Test",
       description: "Sit amet conse bestibulume ullamcorper nulla amet",
-      image: "/images/citizenship.jpg",
+      image: "/images/citizenship.webp",
       icon: "/icons/citizenship.svg",
       isActive: true,
     },
     {
       title: "TOFEL Coaching",
       description: "Sit amet conse bestibulume ullamcorper nulla amet",
-      image: "/images/tofel.jpg",
+      image: "/images/tofel.webp",
       icon: "/icons/tofel.svg",
       isActive: false,
     },
     {
       title: "OET Coaching",
       description: "Sit amet conse bestibulume ullamcorper nulla amet",
-      image: "/images/oet.jpg",
+      image: "/images/oet.webp",
       icon: "/icons/oet.svg",
       isActive: false,
     },
@@ -37,7 +37,7 @@ const PageHeroSection = () => {
     <>
       <div
         className="relative w-full h-[400px] bg-cover bg-center flex items-center justify-center"
-        style={{ backgroundImage: "url(/path-to-your-image.jpg)" }}
+        style={{ backgroundImage: "url(/path-to-your-image.webp)" }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-transparent"></div>
 

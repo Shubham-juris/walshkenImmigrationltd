@@ -7,9 +7,9 @@ import {
 } from "react-icons/fa";
 import { FaQuoteLeft, FaStar, FaRegStar } from "react-icons/fa";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
-import AboutImage5 from "../../assets/hero/AboutImage5.jpg";
-import AboutImage3 from "../../assets/hero/AboutImage3.jpg";
-import AboutImage4 from "../../assets/hero/AboutImage4.jpg";
+import AboutImage5 from "../../assets/hero/AboutImage5.webp";
+import AboutImage3 from "../../assets/hero/AboutImage3.webp";
+import AboutImage4 from "../../assets/hero/AboutImage4.webp";
 const testimonials = [
   {
     id: 1,
@@ -136,7 +136,7 @@ const AboutConsultants = () => {
       </div>
       <section className="font-sans">
         <div className="relative bg-red-700 text-white py-20 px-4 md:px-16 overflow-hidden">
-          <div className="absolute inset-0 opacity-30 bg-cover bg-center bg-[url('/path-to-your-background-image.jpg')] z-0"></div>
+          <div className="absolute inset-0 opacity-30 bg-cover bg-center bg-[url('/path-to-your-background-image.webp')] z-0"></div>
           <div className="relative z-10 max-w-5xl mx-auto text-center">
             <p className="uppercase text-sm tracking-widest font-semibold">
               Lorem ipsum dolor sit amet, consectetur notted adipisicin

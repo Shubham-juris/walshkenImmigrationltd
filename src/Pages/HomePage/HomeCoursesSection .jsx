@@ -1,8 +1,8 @@
 import React from "react";
-import heroBgImage from "../../assets/hero/studentVisa.jpg";
-import heroBgImage1 from "../../assets/hero/AboutImage1.jpg";
-import heroBgImage2 from "../../assets/hero/AboutImage2.jpg";
-import heroBgImage3 from "../../assets/hero/AboutImage3.jpg";
+import heroBgImage from "../../assets/hero/studentVisa.webp";
+import heroBgImage1 from "../../assets/hero/AboutImage1.webp";
+import heroBgImage2 from "../../assets/hero/AboutImage2.webp";
+import heroBgImage3 from "../../assets/hero/AboutImage3.webp";
 
 const courses = [
   {

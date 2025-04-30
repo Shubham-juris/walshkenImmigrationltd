@@ -4,25 +4,25 @@ const courseList = [
     title: "IELTS Course",
     description: "We approached with complex project deliver",
     price: "$170",
-    image: "/images/ielts-course.jpg",
+    image: "/images/ielts-course.webp",
   },
   {
     title: "PTE Course",
     description: "We approached with complex project deliver",
     price: "$170",
-    image: "/images/pte-course.jpg",
+    image: "/images/pte-course.webp",
   },
   {
     title: "TOEFL Course",
     description: "We approached with complex project deliver",
     price: "$190",
-    image: "/images/toefl-course.jpg",
+    image: "/images/toefl-course.webp",
   },
   {
     title: "GRE Course",
     description: "We approached with complex project deliver",
     price: "$190",
-    image: "/images/gre-course.jpg",
+    image: "/images/gre-course.webp",
   },
 ];
 
@@ -30,22 +30,22 @@ const coachingData = [
   {
     title: "IELTS Courses",
     description: "Sit amet conse bestibulume ullamcorper nulla amet",
-    image: "/images/ielts.jpg",
+    image: "/images/ielts.webp",
   },
   {
     title: "Citizenship Test",
     description: "Sit amet conse bestibulume ullamcorper nulla amet",
-    image: "/images/citizenship.jpg",
+    image: "/images/citizenship.webp",
   },
   {
     title: "TOFEL Coaching",
     description: "Sit amet conse bestibulume ullamcorper nulla amet",
-    image: "/images/tofel.jpg",
+    image: "/images/tofel.webp",
   },
   {
     title: "OET Coaching",
     description: "Sit amet conse bestibulume ullamcorper nulla amet",
-    image: "/images/oet.jpg",
+    image: "/images/oet.webp",
   },
 ];
 const PageCourseCards = () => {
