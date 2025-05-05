@@ -47,12 +47,16 @@ const PageCourseCards = () => {
                 alt={item.title}
                 className="w-32 h-32 rounded-full object-cover"
               />
+
+
             </div>
             <div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">
                 {item.title}
               </h3>
               <p className="text-gray-600 text-sm mb-4">{item.description}</p>
+
+              
               <a
                 href="#"
                 className="text-red-600 font-semibold flex items-center hover:underline"
