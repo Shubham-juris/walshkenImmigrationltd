@@ -1,11 +1,13 @@
 import React from "react";
-import BlogImage from "../../assets/hero/BlogImage.jpg";
-import BlogImage1 from "../../assets/hero/BlogImage1.jpg";
-import BlogImage2 from "../../assets/hero/BlogImage2.jpg";
-import BlogImage3 from "../../assets/hero/BlogImage3.jpg";
-import BlogImage4 from "../../assets/hero/BlogImage4.jpg";
-import BlogImage5 from "../../assets/hero/BlogImage5.jpg";
-import ImageVisa from "../../assets/hero/VisaImg.jpg";
+
+import BlogImage from "../../assets/hero/BlogImage.webp";
+import BlogImage1 from "../../assets/hero/BlogImage1.webp";
+import BlogImage2 from "../../assets/hero/BlogImage2.webp";
+import BlogImage3 from "../../assets/hero/BlogImage3.webp";
+import BlogImage4 from "../../assets/hero/BlogImage4.webp";
+import BlogImage5 from "../../assets/hero/BlogImage5.webp";
+
+
 const Blog = () => {
   const blogPosts = [
     {
@@ -80,9 +82,11 @@ const Blog = () => {
     <>
       <div
         className="relative w-full h-[400px] bg-cover bg-center flex items-center justify-center"
+
         style={{
           backgroundImage: `linear-gradient(rgba(1, 0, 0, 0.3), rgba(0, 0, 0, 0.7)),url(${ImageVisa})`,
         }}
+
       >
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-transparent"></div>
         <div className="container mx-auto relative z-10 flex flex-col justify-center h-full px-6 md:px-16">
