@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import { FaAngleDown, FaAngleRight, FaBars } from "react-icons/fa";
+import logo from "../../assets/hero/logo/walshenimmigration.webp";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -20,7 +21,11 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 flex items-center justify-between">
         {/* Logo */}
         <NavLink to="/" className="flex items-center space-x-2">
-          <span className="text-red-600 text-2xl">🌐</span>
+          <img
+            src={logo}
+            alt="Walshken Immigration Logo"
+            className="w-20 h-auto"
+          />
           <h1 className="text-xl font-bold">
             Walshken<span className="text-red-600">Immigration</span>
           </h1>
