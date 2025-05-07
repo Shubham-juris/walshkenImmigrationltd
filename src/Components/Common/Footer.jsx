@@ -10,7 +10,7 @@ const Footer = () => {
         <div>
           <div className="flex justify-center md:justify-start items-center mb-4">
             <NavLink to="/" className="flex items-center space-x-2">
-              <span className="text-red-600 text-2xl">🌐</span>
+              
               <h1 className="text-xl font-bold">
                 Walshken<span className="text-red-600">Immigration</span>
               </h1>
@@ -61,14 +61,14 @@ const Footer = () => {
         <div>
           <h2 className="text-lg font-bold mb-4">Contact</h2>
           <p className="text-gray-400 mb-2">
-            Phone: <br /> +1 718-904-4450
+            Phone: <br /> +1-888-227-0899
           </p>
           <p className="text-gray-400 mb-2">
-            Email: <br /> info@visaland.com
+            Email: <br /> info@walshkenimmigration.com
           </p>
           <p className="text-gray-400">
             Address: <br />
-            123 Main St, City, Country
+            Unit120 3030 3rd Avenue,NE,Calgary,AB
           </p>
         </div>
 
