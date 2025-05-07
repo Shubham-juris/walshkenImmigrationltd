@@ -12,7 +12,6 @@ import PageImage2 from "../../assets/hero/pexels-ekrulila-2305114.jpg";
 import PageImage3 from "../../assets/hero/pexels-freestockpro-1008155.jpg";
 import PageImage4 from "../../assets/hero/pexels-joshsorenson-1716826.jpg";
 
-
 const HomeCoursesSection = () => {
   const coachingData = [
     {
@@ -99,7 +98,7 @@ const HomeCoursesSection = () => {
               </div>
             </div>
           ))}
-        </div>  
+        </div>
       </section>
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center gap-10">
