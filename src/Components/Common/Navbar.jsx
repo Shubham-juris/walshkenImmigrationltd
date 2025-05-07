@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import { FaAngleDown, FaAngleRight, FaBars } from "react-icons/fa";
-import logo from '../../assets/hero/VisaImg.jpg'
+import logo from '../../assets/hero/logo.webp'
+
+
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
