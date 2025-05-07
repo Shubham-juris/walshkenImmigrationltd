@@ -40,7 +40,7 @@ const Contact = () => {
               <div>
                 <p className="text-sm text-red-600">Call For Inquiry</p>
                 <p className="text-lg font-semibold text-gray-900">
-                  +236 (456) 896 22
+               +1-888-227-0899
                 </p>
               </div>
             </div>
@@ -49,7 +49,7 @@ const Contact = () => {
               <div>
                 <p className="text-sm text-red-600">Send Us Email</p>
                 <p className="text-lg font-semibold text-gray-900">
-                  info@example.com
+                  info@walshkenimmigration.com
                 </p>
               </div>
             </div>
@@ -58,7 +58,7 @@ const Contact = () => {
               <div>
                 <p className="text-sm text-red-600">Location</p>
                 <p className="text-lg font-semibold text-gray-900">
-                  734 H, Bryan Burlington, NC 27215
+                  Unit120 3030 3rd Avenue,NE,Calgary,AB
                 </p>
               </div>
             </div>
@@ -122,18 +122,7 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className="w-full h-[500px] mt-16">
-        <iframe
-          title="Google Map"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19800.378012819758!2d-0.1415877!3d51.5154196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b333cf6beef%3A0x1c5d6f3e7f8a1b62!2sLondon%2C%20UK!5e0!3m2!1sen!2sin!4v1616171900134!5m2!1sen!2sin"
-          width="100%"
-          height="100%"
-          className="border-0 w-full h-full"
-          allowFullScreen
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
-        ></iframe>
-      </div>
+     
     </>
   );
 };
