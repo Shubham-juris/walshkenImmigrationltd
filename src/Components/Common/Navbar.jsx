@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import { FaAngleDown, FaAngleRight, FaBars } from "react-icons/fa";
+
 import logo from "../../assets/hero/logo/walshenimmigration.webp";
+=======
+
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const navigate = useNavigate();
@@ -13,13 +16,17 @@ const Navbar = () => {
     { label: "Pages", path: "/page" },
     { label: "Blog", path: "/blog" },
     { label: "Contact", path: "/contact" },
+    
   ];
 
   return (
     <header className="bg-white shadow-md py-4 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 flex items-center justify-between">
         <NavLink to="/" className="flex items-center space-x-2">
+
           <img src={logo} alt="" className="text-red-600 text-2xl" />
+
+
           <h1 className="text-xl font-bold">
             Walshken<span className="text-red-600">Immigration</span>
           </h1>

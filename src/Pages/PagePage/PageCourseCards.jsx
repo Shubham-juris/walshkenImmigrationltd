@@ -67,3 +67,4 @@ const PageCourseCards = () => {
 };
 
 export default PageCourseCards;
+
